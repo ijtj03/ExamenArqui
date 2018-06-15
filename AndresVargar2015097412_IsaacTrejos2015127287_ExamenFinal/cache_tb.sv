@@ -34,15 +34,23 @@ module cache_tb();
    initial begin
       process_mem_read_req_from_cache();
    end
-
+   //-------------------------Respuesta 9------------------------------------
+   //En el waveform se aprecia solo una transicion a memoria debido
+   //a que en el codio se realizan dos request pero a la misma direccion
+   //con el mismo tag por lo que en el segundo request a cache sucede un 
+   //cache hit y no es nesesario requerir otra consulta a memoria, basicamente
+   //es aplicar el proposito del uso de la cache. Por el principio
+   //temporal el mismo dato puede ser accesado en un periodo corto de tiempo
+   //y por este motivo es que se queda almacenado en cache para que su acceso
+   //sea mas rapido
    // MAIN test
    initial begin
       main_memory_init();
       reset(50, 100);
       #100;//wait reset
-      cpu_read_request(32'h0000_0FF0);
+      cpu_read_request(32'h0000_0FF0);//cold miss --> requiere acceso a memoria
       #500;
-      cpu_read_request(32'h0000_0FF0);
+      cpu_read_request(32'h0000_0FF0);//segundo request no requiere acceso a memoria
       #1000;// wait 10 cycles to finish the test
       $finish;
    end

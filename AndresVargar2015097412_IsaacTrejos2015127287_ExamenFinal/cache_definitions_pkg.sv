@@ -70,3 +70,11 @@ package cache_definitions_pkg;
         bit          ready; //data is ready
     } mem_data_t;
 endpackage
+
+//El tipo de protocolo que utiliza es el AXI4 ya que utiliza un
+//handshake de validacion cuando el dato esta listo y cuando el
+//sistema que lo recibe esta listo para recibirlo ademas de manejar,
+//una operacion de escrituro o lectura, un bus de direccion y finalmente
+//un bus de datos de: 
+//CPU -> cache controller(32 bits) 
+//cache controller -> memory (128 bits)

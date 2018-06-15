@@ -7,223 +7,223 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/Documentos/TEC/Arquitectura de Computadores 1/ExPractic
+dD:/Documentos/TEC/Arquitectura de Computadores 1/ExPractic
 Xcache_definitions_pkg
-Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-!s110 1529017513
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+!s110 1528996939
 !i10b 1
 !s100 85fnk@]0bLj@1aBCnzUdE2
-IE3za]cfTdF36mSo;DU7nN2
-VE3za]cfTdF36mSo;DU7nN2
+IeH>n8z0C>]]4];H0UKEcI3
+VeH>n8z0C>]]4];H0UKEcI3
 S1
-R0
-w1528878646
+Z1 dC:/Users/afeli/Documents/GitHub/ExamenArqui/AndresVargar2015097412_IsaacTrejos2015127287_ExamenFinal
+Z2 w1528996384
 8cache_definitions_pkg.sv
 Fcache_definitions_pkg.sv
 L0 1
-Z2 OV;L;10.5b;63
+Z3 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z3 !s108 1529017513.000000
-Z4 !s107 cache_tb.sv|dm_cache_fsm.sv|dm_cache_tag.sv|dm_cache_data.sv|cache_definitions_pkg.sv|
-Z5 !s90 -reportprogress|300|-sv|cache_definitions_pkg.sv|dm_cache_data.sv|dm_cache_tag.sv|dm_cache_fsm.sv|cache_tb.sv|
+Z4 !s108 1528996938.000000
+Z5 !s107 cache_tb.sv|dm_cache_fsm.sv|dm_cache_tag.sv|dm_cache_data.sv|cache_definitions_pkg.sv|
+Z6 !s90 -reportprogress|300|-sv|cache_definitions_pkg.sv|dm_cache_data.sv|dm_cache_tag.sv|dm_cache_fsm.sv|cache_tb.sv|
+!s101 -O0
 !i113 1
-o-sv
-Z6 tCvgOpt 0
+Z7 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 vcache_tb
-R1
-Z7 DXx4 work 21 cache_definitions_pkg 0 22 E3za]cfTdF36mSo;DU7nN2
-DXx4 work 16 cache_tb_sv_unit 0 22 Ii@lhLG:7;U3`3@R9oPh70
-Z8 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z8 DXx4 work 21 cache_definitions_pkg 0 22 eH>n8z0C>]]4];H0UKEcI3
+DXx4 work 16 cache_tb_sv_unit 0 22 ^l=>C[;:`Be<XgOXz9F593
+Z9 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 31
 !i10b 1
 !s100 OK6dfUWcQ4D>PP[OAB2k>1
-IQieRFOiU4TUOS;?nV[ddJ1
+IFzn[Um1_dHDK;G6hj@@673
 !s105 cache_tb_sv_unit
 S1
-R0
-Z9 w1528886112
+R1
+R2
 Z10 8cache_tb.sv
 Z11 Fcache_tb.sv
 L0 3
-R2
 R3
 R4
 R5
-!i113 1
-o-sv
 R6
-Xcache_tb_sv_unit
-R1
+!s101 -O0
+!i113 1
 R7
-VIi@lhLG:7;U3`3@R9oPh70
+Xcache_tb_sv_unit
+R0
+R8
+V^l=>C[;:`Be<XgOXz9F593
 r1
 !s85 0
 31
 !i10b 1
 !s100 7k;ADSXRX0o@Zg100P6kg0
-IIi@lhLG:7;U3`3@R9oPh70
+I^l=>C[;:`Be<XgOXz9F593
 !i103 1
 S1
-R0
-R9
+R1
+R2
 R10
 R11
 L0 1
-R2
 R3
 R4
 R5
-!i113 1
-o-sv
 R6
-vdm_cache_data
-R1
+!s101 -O0
+!i113 1
 R7
-DXx4 work 21 dm_cache_data_sv_unit 0 22 N[d3ddffPoeG]H2Hf5V2i0
+vdm_cache_data
+R0
 R8
+DXx4 work 21 dm_cache_data_sv_unit 0 22 >[_YP_j;0mAgo3oa;clHK3
+R9
 r1
 !s85 0
 31
 !i10b 1
 !s100 m:[gP5_[<Tm4_e0M5NY7c2
-IBiRT=fNjDIoIN;Rf7[^UP3
+IIAFAejiReB40oa:D=7JAo1
 !s105 dm_cache_data_sv_unit
 S1
-R0
-Z12 w1528869264
-Z13 8dm_cache_data.sv
-Z14 Fdm_cache_data.sv
-L0 4
+R1
 R2
+Z12 8dm_cache_data.sv
+Z13 Fdm_cache_data.sv
+L0 4
 R3
 R4
 R5
-!i113 1
-o-sv
 R6
-Xdm_cache_data_sv_unit
-R1
+!s101 -O0
+!i113 1
 R7
-VN[d3ddffPoeG]H2Hf5V2i0
+Xdm_cache_data_sv_unit
+R0
+R8
+V>[_YP_j;0mAgo3oa;clHK3
 r1
 !s85 0
 31
 !i10b 1
 !s100 FR04AJ[?D;_LnVN9fLQj32
-IN[d3ddffPoeG]H2Hf5V2i0
+I>[_YP_j;0mAgo3oa;clHK3
 !i103 1
 S1
-R0
+R1
+R2
 R12
 R13
-R14
 L0 2
-R2
 R3
 R4
 R5
-!i113 1
-o-sv
 R6
-vdm_cache_fsm
-R1
+!s101 -O0
+!i113 1
 R7
-DXx4 work 20 dm_cache_fsm_sv_unit 0 22 Tg798U;?CLj:KWcR_TN953
+vdm_cache_fsm
+R0
 R8
+DXx4 work 20 dm_cache_fsm_sv_unit 0 22 ;PL>Dgm:@U0RD?97B@>Nf3
+R9
 r1
 !s85 0
 31
 !i10b 1
 !s100 ANbi27c>3W>Lcz7[]EHTP1
-Iz0_6zeJgK1ljj:lo]YfHK0
+I0AAgWkjYIJn]H;ZdDbd782
 !s105 dm_cache_fsm_sv_unit
 S1
-R0
-Z15 w1528884220
-Z16 8dm_cache_fsm.sv
-Z17 Fdm_cache_fsm.sv
-L0 3
+R1
 R2
+Z14 8dm_cache_fsm.sv
+Z15 Fdm_cache_fsm.sv
+L0 3
 R3
 R4
 R5
-!i113 1
-o-sv
 R6
-Xdm_cache_fsm_sv_unit
-R1
+!s101 -O0
+!i113 1
 R7
-VTg798U;?CLj:KWcR_TN953
+Xdm_cache_fsm_sv_unit
+R0
+R8
+V;PL>Dgm:@U0RD?97B@>Nf3
 r1
 !s85 0
 31
 !i10b 1
 !s100 V=>ZV9zU9GGO1lPlJ6j333
-ITg798U;?CLj:KWcR_TN953
+I;PL>Dgm:@U0RD?97B@>Nf3
 !i103 1
 S1
-R0
-R15
-R16
-R17
-L0 2
+R1
 R2
+R14
+R15
+L0 2
 R3
 R4
 R5
-!i113 1
-o-sv
 R6
-vdm_cache_tag
-R1
+!s101 -O0
+!i113 1
 R7
-DXx4 work 20 dm_cache_tag_sv_unit 0 22 kWfSXQmIZ;:L?Z<=;NBV?3
+vdm_cache_tag
+R0
 R8
+DXx4 work 20 dm_cache_tag_sv_unit 0 22 Yo4:EUZkTK[9JZhK:fBRb2
+R9
 r1
 !s85 0
 31
 !i10b 1
 !s100 KgT^h7M@SDeZFYi0?Ri7^3
-IcMcl43]cj^d78<[;TKo7]0
+I6:WPdlVoj3f9YVVm<onIb1
 !s105 dm_cache_tag_sv_unit
 S1
-R0
-Z18 w1528869992
-Z19 8dm_cache_tag.sv
-Z20 Fdm_cache_tag.sv
-L0 3
+R1
 R2
+Z16 8dm_cache_tag.sv
+Z17 Fdm_cache_tag.sv
+L0 3
 R3
 R4
 R5
-!i113 1
-o-sv
 R6
-Xdm_cache_tag_sv_unit
-R1
+!s101 -O0
+!i113 1
 R7
-VkWfSXQmIZ;:L?Z<=;NBV?3
+Xdm_cache_tag_sv_unit
+R0
+R8
+VYo4:EUZkTK[9JZhK:fBRb2
 r1
 !s85 0
 31
 !i10b 1
 !s100 =59S6>:l4L2c?DKUR^f=S0
-IkWfSXQmIZ;:L?Z<=;NBV?3
+IYo4:EUZkTK[9JZhK:fBRb2
 !i103 1
 S1
-R0
-R18
-R19
-R20
-L0 2
+R1
 R2
+R16
+R17
+L0 2
 R3
 R4
 R5
-!i113 1
-o-sv
 R6
+!s101 -O0
+!i113 1
+R7

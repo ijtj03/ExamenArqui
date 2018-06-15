@@ -90,6 +90,17 @@ module dm_cache_fsm(
          2'b10:v_cpu_res.data = data_read[95:64];
          2'b11:v_cpu_res.data = data_read[127:96];
       endcase
+      //El codigo se modifica de la siguiente forma:
+      //case(cpu_req.addr[2])
+      //   1'b0:v_cpu_res.data = data_read[63:0];
+      //   1'b1:v_cpu_res.data = data_read[127:64];
+      //endcase
+      //Debido a que solo se pueden direccionar dos palabras la 
+      //cantidad de bits nesesaria es de 1, y es utilizando el
+      //bit 2 para poder mantener el alineamiento de memoria a
+      //4 con 1 y 0 en 0.
+
+
 
       //memory request address (sampled from CPU request)
       v_mem_req.addr = cpu_req.addr;
@@ -114,6 +125,19 @@ module dm_cache_fsm(
       //   b- Que tipos de Misses existen en la implementacion (Justifique)    
       //---------------------------------------------------------------------------
       //CMP_TAG state
+
+      //----------------respuesta--------------------------------------------------
+      //a-El determinar si existe un miss o un hit es mediante el uso de la comparacion del tag 
+      //que esta siendo solicitado y el de ese index determinado en el que se esta busccando
+      //cpu_req.addr[TAG_MSB:TAG_LSB] == tag_read.tag y ademas conociendo si la lectura del tag 
+      //es valida tag_read.valid.
+      //b-Existe el cold miss o compulsory para escritura el cual sucede debido a que el cache esta intentado ser
+      //leido  cuando todavia esta 'frio', que no se ha escrito nada en el todavia,por lo que si el dato que se busca
+      //no esta dirty(MEM[X]!=CACHE[X]), se escribe el dato de memoria a cache, en el caso de que el cache este dirty
+      //primero escribe el dato dirty en su posicion de memoria correspondiente, luego se lee la posicion en memoria
+      //que se estaba buscando y se escribe el tag que realmente se estaba buscando y vuelve a producir un dato dirty.
+      //este tipo de politica de escritura se llama writeback, y ademas utiliza write allocate para write misses.
+      
       CMP_TAG : begin
          //cache hit (tag match and cache entry is valid)
          if (cpu_req.addr[TAG_MSB:TAG_LSB] == tag_read.tag && tag_read.valid) begin
@@ -182,7 +206,12 @@ module dm_cache_fsm(
       end
       //-------------Pregunta Extra--------------    
       // Extra points (5) Porque no hay "default"
-      //-----------------------------------------      
+      //-----------------------------------------     
+     //----------------respuesta--------------------------------------------------
+      //Ya que al existir un sistema de reseteo que asigna el inicio de la maquina de estados
+      //al entrar la maquina nunca va a permitir que se ejecute un estado que no esta contemplado,
+      //por lo que no es nesesario utilizar un default ya que la maquina de estados del controlador
+      // no puede estar,en un esado de default
       endcase
    end
    always_ff @(posedge(clk)) begin
